@@ -36,6 +36,6 @@ var run = {};
 }) (run)
 
 
-
+// run tests from here:
 
 run.test('includes', 'ensures inserted note is saved', "model.saveNotes('something')", "something");
