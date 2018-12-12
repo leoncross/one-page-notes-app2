@@ -1,12 +1,10 @@
+
 window.onload = function() {
 
+  view.display()
 
-    display()
-
-document.getElementById("div1");
-    console.log('hi')
-
-
-
+  document.getElementById("submit").addEventListener("click", function() {
+    controller.addNote(document.getElementById("note").value)
+  })
 
 }
