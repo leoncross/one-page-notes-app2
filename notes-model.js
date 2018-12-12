@@ -10,6 +10,4 @@ var model = {};
 
   exports.saveNotes = saveNotes
 
-
-
 })(model)

@@ -3,7 +3,7 @@ var controller = {};
 (function(exports) {
 
   function addNote(note) {
-    view.insertNote(note) // on view page
+    view.displayNote(note)
     model.saveNotes(note)
   }
   exports.addNote = addNote
