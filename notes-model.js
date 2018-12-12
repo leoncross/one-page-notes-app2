@@ -1,11 +1,11 @@
 var model = {};
 
 (function(exports){
-  var notes = []
+  notes = []
 
   function saveNotes(note) {
     notes.push(note)
-    console.log(notes)
+    return note
   }
 
   exports.saveNotes = saveNotes
