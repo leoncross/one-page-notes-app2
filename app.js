@@ -2,35 +2,25 @@
 
 window.onload = function() {
   controller.homePage()
-  eventsHome()
 
-  function eventsHome() {
-    document.getElementById("submit").addEventListener("click", function() {
+events()
+  function events() {
+    document.getElementById("home").addEventListener("click", function() {
+      controller.homePage()
+      controller.addNotes()
+      events()
+    })
+
+    document.getElementById("listNotes").addEventListener("click", function() {
+      controller.listNotes()
+      events()
+    })
+
+    var element = document.getElementById("submit")
+    if (element) {
+      element.addEventListener("click", function() {
       controller.addNote(document.getElementById("note").value)
-    })
-
-    document.getElementById("home").addEventListener("click", function() {
-      controller.homePage()
-      controller.addNotes()
-      eventsHome()
-    })
-
-    document.getElementById("listNotes").addEventListener("click", function() {
-      controller.listNotes()
-      eventsNotes()
-    })
-  }
-
-  function eventsNotes() {
-    document.getElementById("home").addEventListener("click", function() {
-      controller.homePage()
-      controller.addNotes()
-      eventsHome()
-    })
-
-    document.getElementById("listNotes").addEventListener("click", function() {
-      controller.listNotes()
-      eventsNotes()
-    })
-  }
+      })
+    }
+  };
 }
