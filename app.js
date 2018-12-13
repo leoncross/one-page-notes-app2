@@ -3,6 +3,7 @@
 window.onload = function() {
   controller.homePage()
   eventsHome()
+
   function eventsHome() {
     document.getElementById("submit").addEventListener("click", function() {
       controller.addNote(document.getElementById("note").value)

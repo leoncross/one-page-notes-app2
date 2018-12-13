@@ -5,8 +5,13 @@ var displayNotes = {};
   function displayNote(note){
     document.getElementById("notes").innerHTML = '<p>'
     for (index = 0; index < note.length; ++index) {
-      document.getElementById("notes").innerHTML += '<p>' + note[index] + '</p>'
+      short = shortNote(note[index])
+      document.getElementById("notes").innerHTML += '<p>' + short + '</p>'
     }
+  }
+
+  function shortNote(note) {
+    return note.substring(0,20)
   }
 
   exports.displayNote = displayNote
