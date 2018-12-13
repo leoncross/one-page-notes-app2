@@ -1,11 +1,13 @@
-# one-page-notes-app2
+# one-page-notes-app
 
+notes(SPA) is deployed here: https://notes-spa.herokuapp.com/
 
+# Development process:
 
-# what we want:
+### what we want:
 a single, no refresh or redirect page that can add / view notes
 
-# how:
+### how:
 html page:
 - a single id pointing to the body
 
@@ -21,7 +23,7 @@ view
 controller
 - its the brains of the application;
 
-# what files will we need?
+### what files will we need?
 - app.js (runs the prog)
 - index.html (html page)
 - notes-view.js (view page)
