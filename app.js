@@ -2,20 +2,36 @@
 
 window.onload = function() {
   controller.homePage()
-  events()
-  function events() {
+  eventsHome()
+
+  function eventsHome(){
+    submit()
+    home()
+    listNotes()
+  }
+
+  function eventsList(){
+    home()
+    listNotes()
+  }
+
+  function submit(){
     document.getElementById("submit").addEventListener("click", function() {
       controller.addNote(document.getElementById("note").value)
+      eventsHome()
     })
-
+  }
+  function home(){
     document.getElementById("home").addEventListener("click", function() {
       controller.homePage()
       controller.addNotes()
-      events()
+      eventsHome()
     })
-
+  }
+  function listNotes(){
     document.getElementById("listNotes").addEventListener("click", function() {
-      view.listNotes()
+      controller.listNotes()
+      eventsList()
     })
   }
 }

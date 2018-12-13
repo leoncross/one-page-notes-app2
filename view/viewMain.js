@@ -19,10 +19,20 @@ var view = {};
     displayNotes.displayNote(note)
   }
 
-  function listNotes() {
-    allNotes.listNotes()
+  function listNotes(notes) {
+    allNotes.listNotes(notes)
   }
 
+  function removeHtml() {
+    remove.removeHtml()
+  }
+
+  function navigationBar (){
+    navigation.navigationBar()
+  }
+
+  exports.navigationBar = navigationBar
+  exports.removeHtml = removeHtml
   exports.homePage = homePage
   exports.displayNote = displayNote
   exports.displayNoteInput = displayNoteInput
