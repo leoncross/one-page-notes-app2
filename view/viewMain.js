@@ -1,3 +1,6 @@
+// can only communicate with view pages
+// can only handle the view (text/layout)
+
 var view = {};
 
 (function(exports) {

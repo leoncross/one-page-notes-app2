@@ -1,3 +1,6 @@
+// handles data - saves, returns. Only handles; doesnt handle the look of each
+
+
 var model = {};
 
 (function(exports){

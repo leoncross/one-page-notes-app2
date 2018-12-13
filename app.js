@@ -1,5 +1,7 @@
+// only allowed to talk to controller
+
 window.onload = function() {
-  view.homePage()
+  controller.homePage()
   events()
   function events() {
     document.getElementById("submit").addEventListener("click", function() {
@@ -7,7 +9,7 @@ window.onload = function() {
     })
 
     document.getElementById("home").addEventListener("click", function() {
-      view.homePage()
+      controller.homePage()
       controller.addNotes()
       events()
     })
@@ -17,6 +19,3 @@ window.onload = function() {
     })
   }
 }
-
-
-// issue = currently prints all notes; i want it to print one at a time
