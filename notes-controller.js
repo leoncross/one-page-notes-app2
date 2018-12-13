@@ -20,7 +20,6 @@ var controller = {};
   function listNotes() {
     view.removeHtml()
     view.navigationBar()
-
     view.listNotes(model.recallNotes())
   }
 
