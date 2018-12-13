@@ -4,13 +4,11 @@ window.onload = function() {
   function events() {
     document.getElementById("submit").addEventListener("click", function() {
       controller.addNote(document.getElementById("note").value)
-
-
-      console.log(model.recallNotes())
     })
 
     document.getElementById("home").addEventListener("click", function() {
       view.homePage()
+      controller.addNotes()
       events()
     })
 
