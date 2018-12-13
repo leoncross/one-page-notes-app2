@@ -15,6 +15,12 @@ var model = {};
     return notes
   }
 
+
+  function findNote(index){
+    return notes[index]
+  }
+
+  exports.findNote = findNote
   exports.saveNotes = saveNotes
   exports.recallNotes = recallNotes
 

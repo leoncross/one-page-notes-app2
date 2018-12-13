@@ -24,10 +24,9 @@ events()
     }
 
     window.addEventListener("hashchange", function() {
-      console.log('here')
-      // controller.hashTracker()
+      location = window.location
+      controller.hashTracker(location)
+      events()
     })
-
-
   };
 }

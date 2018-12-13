@@ -24,9 +24,11 @@ var controller = {};
   }
 
   function hashTracker(location) {
+    note = location.hash.split("#")[1];
+    foundNote = model.findNote(note)
     view.removeHtml()
     view.navigationBar()
-    console.log(document.getElementById("anote"))
+    view.displaySingleNote(foundNote)
   }
 
   exports.hashTracker = hashTracker

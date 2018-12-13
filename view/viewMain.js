@@ -31,6 +31,11 @@ var view = {};
     navigation.navigationBar()
   }
 
+  function displaySingleNote(note){
+    displayNotes.singleNote(foundNote)
+  }
+
+  exports.displaySingleNote = displaySingleNote
   exports.navigationBar = navigationBar
   exports.removeHtml = removeHtml
   exports.homePage = homePage
