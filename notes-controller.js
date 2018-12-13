@@ -23,6 +23,13 @@ var controller = {};
     view.listNotes(model.recallNotes())
   }
 
+  function hashTracker(location) {
+    view.removeHtml()
+    view.navigationBar()
+    console.log(document.getElementById("anote"))
+  }
+
+  exports.hashTracker = hashTracker
   exports.listNotes = listNotes
   exports.homePage = homePage
   exports.addNote = addNote

@@ -10,14 +10,15 @@ var displayNotes = {};
     }
   }
 
-// "<input class='singlenotes' type='submit'" + "value='" + short + "'>" + '<p>'
-
-
-
   function shortNote(note) {
     return note.substring(0,20)
   }
 
+  function singleNote() {
+
+  }
+  
+  exports.singleNote = singleNote
   exports.displayNote = displayNote
 
 }) (displayNotes)

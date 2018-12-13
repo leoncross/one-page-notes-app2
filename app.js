@@ -22,5 +22,12 @@ events()
       controller.addNote(document.getElementById("note").value)
       })
     }
+
+    window.addEventListener("hashchange", function() {
+      console.log('here')
+      // controller.hashTracker()
+    })
+
+
   };
 }
