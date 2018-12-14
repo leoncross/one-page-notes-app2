@@ -9,8 +9,10 @@ var controller = {};
   }
 
   function addNote(note) {
-    model.saveNotes(note)
-    view.displayNote(model.recallNotes())
+    if (note !== "") {
+      model.saveNotes(note)
+      view.displayNote(model.recallNotes())
+    }
   }
 
   function addNotes() {
