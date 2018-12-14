@@ -6,7 +6,7 @@ var displayNotes = {};
     document.getElementById("notes").innerHTML = '<p>'
     for (index = 0; index < note.length; ++index) {
       short = shortNote(note[index])
-      document.getElementById("notes").innerHTML += "<a href=#" + index + " id='shortnote'>" + short + "</a>" + "<p>"
+      document.getElementById("notes").innerHTML += index + 1 + " <a href=#" + index + " id='shortnote'>" + short + "</a>" + "<p>"
     }
   }
 

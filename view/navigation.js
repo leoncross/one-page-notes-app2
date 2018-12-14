@@ -4,8 +4,9 @@ var navigation = {};
 
   function navigationBar(){
     document.getElementById("navigation").innerHTML =
-    '<input id="home" type="submit" value="Home">' +
-    '<input id="listNotes" type="submit" value="List of Notes">'
+    '<br>' +
+    '<input id="home" class="btn-group btn-group-lg" role="group" type="submit" aria-label="Home" value="Home">' +
+    '<input id="listNotes" class="btn-group btn-group-lg" role="group" type="submit" value="List of Notes">'
   }
   exports.navigationBar = navigationBar
 

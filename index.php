@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="app.js"></script>
     <script src="view/viewMain.js"></script>
     <script src="view/navigation.js"></script>
@@ -16,8 +17,9 @@
     <title></title>
   </head>
   <body>
+    <center>
     <div id="navigation"></div>
     <div id="htmlBody"></div>
-
+  </center>
   </body>
 </html>
